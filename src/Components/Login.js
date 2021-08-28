@@ -48,13 +48,16 @@ function Login() {
                     </button>
 
                 </form>
-                <p>"By clicking Sign Up, you agree to our Terms and that you have read virtusa intern's project E-Library 
+                <p>"To Sign Up, you need to read and agree to our Terms and virtusa intern's project E-Library 
                     virtusa intern's project E-Library virtusa intern's project E-Library Data Use Policy, including our Cookie Use."</p>
 
-                <button 
+                <Link to='/register'>
+                    <span className="login__RegisterButton">Click here to Create your new Account</span>
+                </Link>
+                {/* <button 
                     onClick={register}
                     className="login__RegisterButton">Create your new Account
-                </button>
+                </button> */}
             </div>
         </div>
     )

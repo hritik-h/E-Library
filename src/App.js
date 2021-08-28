@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from './Components/Checkout';
 import Login from './Components/Login';
+import Register from './Components/Register';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
 
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
           </Route>
 
           <Route path="/checkout">
