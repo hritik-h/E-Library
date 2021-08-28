@@ -14,7 +14,8 @@ function Home() {
                         title="The Harry poter series: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, tenetur maxime itaque aliquam culpa explicabo, inventore rem autem officia, soluta perspiciatis mollitia rerum? Ad minus rem quia delectus quasi non."
                         price={1911.96}
                         image="https://images-na.ssl-images-amazon.com/images/I/71rOzy4cyAL.jpg"
-                        rating={5} />
+                        rating={5}
+                    />
                     <Product
                         id="1112"
                         title="Aladdin: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, tenetur maxime itaque aliquam culpa explicabo, inventore rem autem officia, soluta perspiciatis mollitia rerum? Ad minus rem quia delectus quasi non."
