@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import Home from './Components/Home';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Checkout from './Components/Checkout';
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Login from './Components/Login';
 import Register from './Components/Register';
+import ProductDescription from './Components/ProductDescription';
 
 function App() {
   return (
@@ -22,9 +22,9 @@ function App() {
             <Register />
           </Route>
 
-          <Route path="/checkout">
+          <Route path="/product_description">
             <Header />
-            <Checkout />
+            <ProductDescription />
           </Route>
 
           {/* !!! Default Route at bottom !!! */}
@@ -34,6 +34,9 @@ function App() {
           </Route>
 
         </Switch>
+
+        <Redirect to="/" />
+
       </div>
     </Router>
   );

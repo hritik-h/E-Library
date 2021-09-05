@@ -25,11 +25,14 @@
 }
 
 .product > button {
-  background: #55e7d4;
+  font-weight: 600;
+  font-size: medium;
+  background: #55d6e7;
   border: 1px solid;
   margin-top: 10px;
   border-color: #4bd3a6 #29a1b1 #0b755e;
   color: #111;
+  cursor: pointer;
 }
 
 .product__price {

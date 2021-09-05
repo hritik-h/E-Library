@@ -1,25 +1,16 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 import './Product.css';
-import { useStateValue } from './StateProvider';
 
 function Product({id, title, image, price, rating}) {
-    const [{basket}, dispatch] = useStateValue();
 
-    const addToBasket = () => {
-        // Dispatch the item into the data layer
-        dispatch({
-            type: 'ADD_TO_BASKET',
-            item: {
-                id: id,
-                title: title,
-                image: image,
-                price: price,
-                rating: rating,
-            },
-        })
+    const history = useHistory();
+    function productDescription() {
+        history.push("/product_description");
     }
 
     return (
+        // The product card
         <div className="product">
             <div className="product__info">
                 <p>{title}</p>
@@ -36,7 +27,7 @@ function Product({id, title, image, price, rating}) {
             </div>
 
             <img src={image}/>
-            <button onClick={addToBasket}>Add to Basket</button>
+            <button onClick={productDescription}>Check this out</button>
         </div>
     )
 }

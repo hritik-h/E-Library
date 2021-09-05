@@ -29,11 +29,13 @@ function Register() {
                     <h5>Name</h5>
                     <input
                         type="text" onChange={e => setName(e.target.value)} required
+                        className="register__name"
                     />
 
                     <h5>Phone Number</h5>
                     <input 
                         type="tel" pattern="[0-9]{10}" required
+                        className="register__phone"
                     />
 
                     <h5>Address</h5>
@@ -45,16 +47,19 @@ function Register() {
                     <h5>ID Proof/Address Proof</h5>
                     <input 
                         type="file" required
+                        className="register__idproof"
                     />
 
                     <h5>E-mail</h5>
                     <input
                         type="text" value={email} onChange={e => setEmail(e.target.value)} required
+                        className="register__email"
                     />
 
                     <h5>Password</h5>
                     <input
                         type="password" value={password} onChange={p => setPassword(p.target.value)}
+                        className="register__password"
                     />
 
                 </form>

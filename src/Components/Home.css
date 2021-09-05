@@ -13,6 +13,14 @@
   margin-right: 5px;
 }
 
+.home__genre {
+  font-size: larger;
+  z-index: 1;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
 .home__image {
   width: 100%;
   z-index: -1;
